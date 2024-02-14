@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Data</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="control-st.css">
+</head>
+<body>
+<div class="logo">
+    <img src="logo.png" >
+</div>
+
+<div class="topnav">
+    <div class="topnav-center">
+        <a href="c1.html">Home</a>
+        <a href="news.html">News</a>
+        <a class="active" href="control-st.html">Students</a>
+        <a href="control-cr.html">Courses</a>
+    </div>
+
+    <div class="topnav-right">
+        <a href="control-abt.html">About</a>
+        <button id="logoutBtn" class="logoutBtn">Logout</button>
+    </div>
+</div>
+
+<div class="form-container">
+    <form class="form" id="studentForm">
+        <input type="text" id="id" placeholder="ID">
+        <span id="idError" class="error" style="display: none;"></span>
+        
+        <input type="text" id="fullName" placeholder="Full Name">
+        
+        <select id="level">
+            <option value="">Select Level</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        
+        <input type="text" id="gpa" placeholder="GPA">
+        
+        <select id="group">
+            <option value="">Select Group</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="None">None</option>
+        </select>
+
+        <input type="text" id="password" placeholder="Password">
+        
+        <input type="submit" value="Add Student">
+        <span id="formError" class="error" style="display: none;">Please fill all fields.</span>
+    </form>
+</div>
+
+<div class="search-container">
+    <form id="searchForm">
+        <input type="text" id="searchQuery" placeholder="Search by ID or Name">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+</div>
+
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Level</th>
+                <th>GPA</th>
+                <th>Group</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+            <!-- Student data will be added here -->
+        </tbody>
+    </table>
+
+    <div id="errorMessage" class="error" style="display: none;"></div>
+</div>
+
+<script src="control-st.js"></script>
+
+</body>
+</html>

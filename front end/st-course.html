@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="st-course.css">
+    
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Your Logo" class="logo-img"> 
+    </div>
+
+    <div class="topnav">
+        
+        <div class="topnav-center">
+            <a href="s1.html">Home</a>
+            <a href="st-news.html">News</a>
+            <a class="active" href="st-course.html">Courses</a>
+        </div>
+    
+        <div class="topnav-right">
+            <a href="st-about.html">About</a>
+            <button id="logoutBtn" class="logoutBtn">Logout</button>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="choose-courses">
+            <h2>Choose Courses</h2>
+            <form id="courseForm">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course">
+                    
+                </select>
+                <button class="addCourse" type="submit">Add Course</button>
+            </form>
+        </div>
+
+        <div class="selected-courses">
+            <h2>Selected Courses</h2>
+            <div class="table-container">
+                <table id="selectedCoursesTable">
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Course Code</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="selectedCourses"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+
+<script src="st-course.js"></script>
+
+</body>
+</html>

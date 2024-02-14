@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control</title>
+    <link rel="stylesheet" href="c1.css">
+    
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" >
+    </div>
+    
+    <div class="topnav">
+        
+        <div class="topnav-center">
+            <a class="active" href="c1.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="control-st.html">Students</a>
+            <a href="control-cr.html">Courses</a>
+        </div>
+    
+        <div class="topnav-right">
+            <a href="control-abt.html">About</a>
+            <button id="logoutBtn" class="logoutBtn">Logout</button>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="dropdown">
+            <img src="student-btn.jpg" alt="Image 1" class="dropdown-img">
+            <button class="dropbtn">Student</button>
+            <div class="dropdown-content">
+                <a id="addStudent" href="control-st.html">Add</a>
+                <a id="removeStudent" href="control-st.html">Remove</a>
+                <a id="editStudent" href="control-st.html">Edit Student Information</a>
+                <a id="viewStudentInfo" href="control-st.html">View Student Information</a>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+            <img src="courses-btn.jpg" alt="Image 2" class="dropdown-img">
+            <button class="dropbtn">Course</button>
+            <div class="dropdown-content">
+                <a id="addCourse" href="control-cr.html">Add</a>
+                <a id="removeCourse" href="control-cr.html">Remove</a>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+            <img src="news-btn.jpg" alt="Image 3" class="dropdown-img">
+            <button class="dropbtn"> News </button>
+            <div class="dropdown-content">
+                <a id="postNews" href="news.html">Post</a>
+                <a id="viewNews" href="news.html">View</a>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="c1.js"></script>
+
+</body>
+</html>

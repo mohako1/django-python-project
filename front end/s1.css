@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(student-bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+}
+
+.logo-img {
+    width: 200px;
+    height: auto; 
+}
+
+.topnav {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between; 
+    align-items:center; 
+}
+
+.topnav-center {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: left;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.topnav a.active:hover {
+    background-color: #00366f;
+}
+
+
+.topnav-right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav-right {
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+.logoutBtn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logoutBtn:hover {
+    background-color: #00366f;
+}
+
+
+h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+.editGroup {
+    background-color: #007bff;
+    color: white;
+
+}
+.editGroup:hover {
+    background-color: #00366f;
+}

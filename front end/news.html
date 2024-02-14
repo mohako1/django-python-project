@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News</title>
+<link rel="stylesheet" href="news.css">
+</head>
+<body>
+<div class="logo">
+    <img src="logo.png" >
+</div>
+
+<div class="topnav">
+    <div class="topnav-center">
+        <a href="c1.html">Home</a>
+        <a class="active" href="news.html">News</a>
+        <a href="control-st.html">Students</a>
+        <a href="control-cr.html">Courses</a>
+    </div>
+
+    <div class="topnav-right">
+        <a href="control-abt.html">About</a>
+        <button id="logoutBtn" class="logoutBtn">Logout</button>
+    </div>
+</div>
+
+<button id="fixedButton" class="fixed-button">Post News</button>
+
+<div id="overlay">
+    <div class="overlay-content">
+        <span id="closeButton" class="close-button">&times;</span>
+        <div class="container">
+            <h1>Post News</h1>
+            <form id="newsForm">
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" required></textarea><br>
+                <button class="postnewsbtn" type="submit">Post</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="news-list" id="newsList"></div>
+
+<script src="news.js"></script>
+</body>
+</html>

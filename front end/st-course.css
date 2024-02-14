@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(student-bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+}
+
+.logo-img {
+    width: 200px;
+    height: auto; 
+}
+
+.topnav {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items:center; 
+}
+
+.topnav-center {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: left;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.topnav a.active:hover {
+    background-color: #00366f;
+}
+
+
+.topnav-right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav-right {
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+.logoutBtn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logoutBtn:hover {
+    background-color: #00366f;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+.choose-courses {
+    width: 40%;
+}
+
+.selected-courses {
+    width: 50%;
+}
+
+.table-container {
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.588); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    color: #373737; 
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.addCourse {
+    width: 100%;
+    padding: 8px 12px; 
+    font-size: 16px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addCourse:hover {
+    background-color: #0056b3; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.remove-course-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.remove-course-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="s1.css">
+    
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Your Logo" class="logo-img"> 
+    </div>
+
+    <div class="topnav">
+        
+        <div class="topnav-center">
+            <a class="active" href="s1.html">Home</a>
+            <a href="st-news.html">News</a>
+            <a href="st-course.html">Courses</a>
+        </div>
+    
+        <div class="topnav-right">
+            <a href="st-about.html">About</a>
+            <button id="logoutBtn" class="logoutBtn">Logout</button>
+
+        </div>
+    </div>
+
+    <h2>Student Information</h2>
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Level</th>
+                <th>GPA</th>
+                <th>Group</th>
+                <th>Password</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody id="student-table-body">
+            <!-- Student data will be added here -->
+            <tr>
+                <td id="id"></td>
+                <td id="fullname"></td>
+                <td id="level"></td>
+                <td id="gpa"></td>
+                <td id="group-1"></td>
+                <td id="password"></td>
+                <td><button class="editGroup" onclick="showEditGroupDropdown(1)">Edit Group</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+<script src="s1.js"></script>
+
+</body>
+</html>
